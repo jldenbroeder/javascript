@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Exercices Javascript</title>
-</head>
-<body>
-  <!-- <p>Exercice : Diseur de bonne aventure</p>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercices Javascript</title>
+  </head>
+
+  <body>
+<p>Exercices Javascript</p>
+    <!-- <p>Exercice : Diseur de bonne aventure</p>
   <script>
     var metier = prompt("Quel métier aimeriez-vous faire?");
     var pays = prompt("Dans quel pays souhaiteriez-vous habiter?");
@@ -16,7 +19,7 @@
     console.log("Vous serez " + metier + " et habiterez en " + pays + ", marié à " + prenom + " avec " + nbrEnfant + " enfant.");
   </script> -->
 
-  <!-- <p>Exercice : Calculer l'âge</p>
+    <!-- <p>Exercice : Calculer l'âge</p>
   <script>
     var date = new Date();
     var anneeActuelle = date.getFullYear();
@@ -25,7 +28,7 @@
     console.log("Vous avez cette année-ci " + age + " ans.");
   </script> -->
 
-  <!-- <p>Exercice : Bientôt vieux</p>
+    <!-- <p>Exercice : Bientôt vieux</p>
   <script>
     var age = prompt("Quel est votre âge?");
     var ageMax = 100;
@@ -36,7 +39,7 @@
     console.log("Il vous reste " + denreeTotale + " " + denree + " a manger avant d'atteindre l'âge de " + ageMax + " ans.");
   </script> -->
 
-  <!-- <p>Exercice : Priorités</p>
+    <!-- <p>Exercice : Priorités</p>
   <script>
     var result = (1 + 2) * 3 + 4 / 2;
     var a = 1 + 2;
@@ -45,19 +48,51 @@
     var d = b + c;
     console.log("Premier résultat: " + result + " et 2ème résultat: " + d);
   </script> -->
-
-  <p>Exercice : Langues</p>
+    <!-- <p>Exercice : Langues</p>
   <script>
-  function hello (fr, es, en){
+  var langue = prompt("Quel langue parlez-vous? (fr, es, en)");
         if (langue === "fr"){
-          return "Bonjour tout le monde";
+          console.log("Bonjour tout le monde");
         }
-  }
-    var langue = prompt("Quel langue parlez-vous? (fr, es, en)");
-    var fr = "Bonjour tout le monde";
-    var es = "Hola, Mundo";
-    var en = "Hello world";
+        else if (langue === "es"){
+          console.log("Hola, Mundo");
+        }
+        else if (langue === "en"){
+          console.log("Hello world");
+        }
+        else{
+          console.log("Désolé mais je ne parle pas votre langue!");
+        }
+  </script> -->
 
-    console.log("Il vous reste " + denreeTotale + " " + denree + " a manger avant d'atteindre l'âge de " + ageMax + " ans.");
-</body>
+    <!-- <p>Exercice : Affichage des scores</p>
+    <script>
+      var score = prompt("Quel est votre score?");
+      if (score >= 90 && score <= 100) {
+        var resultat = "A";
+      } else if (score < 90 && score > 50) {
+        var resultat = "B";
+      } else if (score <= 50) {
+        var resultat = "C";
+      } else {
+        var resultat = "\"Indéfinissable\" car vous n'avez pas mit la bonne valeur!";
+      }
+      console.log("Vous avez le rang " + resultat);
+    </script> -->
+
+  <!-- <script>
+    var produit = "pomme";
+    var nbrProduit = parseInt(prompt("Combien de " + produit + " avez-vous?"));
+      if (nbrProduit <= 1){
+        console.log("Vous avez " + nbrProduit + " " + produit);
+      }
+      else{
+        console.log("Vous avez " + nbrProduit + " " + produit + "s");
+      }
+  </script> -->
+
+
+
+  </body>
+
 </html>
