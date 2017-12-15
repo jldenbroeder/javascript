@@ -184,17 +184,25 @@
         document.write(etoile+"<br>");
       }
     </script> -->
-    <h3>Exercices : Tableaux, Exercice : addition</h3>
+    <!-- <h3>Exercices : Tableaux, Exercice : addition</h3>
     <script type="text/javascript">
       var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
       var nbrValeur = myArray.length;
-      // document.write(nbrValeur + "<br><br>");
-      var addition;
+      var resultat = 0;
       for (var i = 0; i < nbrValeur; i++) {
-        addition = myArray[i];
-        document.write(i + " : " + addition + "<br>");
+      resultat = resultat+myArray[i];
       }
-    </script>
+      document.write(+ resultat);
+    </script> -->
+
+<script>
+      var myArray = ['Bourvil', 'Fernandel', 'Coluche'];
+      var nbrValeur = myArray.length;
+      for (var i = 0; i < nbrValeur; i++) {
+      document.write("Le numero " + i + " est " + myArray[i] + ".<br>");
+      }
+</script>
+
   </body>
 
 </html>
