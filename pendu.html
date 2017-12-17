@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
     <meta charset="UTF-8">
@@ -11,15 +11,29 @@
   <body>
     <p>Exercices Javascript, jeu du pendu</p>
 
-<script>
-var motAdDeviner = ['B','O','N','J','O','U','R'];
-var motTrouve = ['','','','','','',''];
-function guessLetter(votreLettre){
-document.write(votreLettre);
-}
-var votreLettre = prompt("Propse une lettre");
-    guessLetter(votreLettre);
-</script>
+    <script>
+      var motADeviner = ['B', 'O', 'N', 'J', 'O', 'U', 'R'];
+      var motATrouver = ['_', '_', '_', '_', '_', '_', '_'];
+      var nbrValeur = motADeviner.length;
+
+      document.write(motATrouver);
+
+      function guessLetter(votreLettre) {
+        votreLettre = votreLettre.toUpperCase(); // En majuscule
+        console.log(votreLettre);
+        if (votreLettre.length === 1) {
+          for (var i = 0; i < nbrValeur; i++) {
+            if (motADeviner[i] === votreLettre) {
+              console.log(votreLettre + " fait partie du mot");
+            }
+          }
+        } else {
+          console.log("trop de lettre");
+        }
+      }
+      var votreLettre = prompt("Proposez une lettre");
+      guessLetter(votreLettre);
+    </script>
 
   </body>
 
