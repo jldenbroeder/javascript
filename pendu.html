@@ -21,10 +21,12 @@
       function guessLetter(votreLettre) {
         votreLettre = votreLettre.toUpperCase(); // En majuscule
         console.log(votreLettre);
-        if (votreLettre.length === 1) {
+        if (votreLettre.length === 1) { // Verifier si 1 caractère
           for (var i = 0; i < nbrValeur; i++) {
             if (motADeviner[i] === votreLettre) {
               console.log(votreLettre + " fait partie du mot");
+              motATrouver[i] = votreLettre;
+              
             }
           }
         } else {
