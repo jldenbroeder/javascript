@@ -14,7 +14,7 @@
       var tableauMotADeviner = ['B', 'O', 'N', 'J', 'O', 'U', 'R'],
         tableauMotTrouve = ['_', '_', '_', '_', '_', '_', '_'],
         nbrValeur = tableauMotADeviner.length,
-        nbrDeLettreTrouve = 0,
+        tableauDeLettrePropose = [],
         votreLettre = "",
         nbrDeVie = 0,
         nbrDeVieMax = 26;
@@ -23,27 +23,39 @@
         for (j = 0; j <= nbrDeVieMax; j++) {
           // Verification des 2 tableaux, s'ils sont différents -> Jeu
           if (tableauMotADeviner.join('') !== tableauMotTrouve.join('')) {
-            document.write(tableauMotTrouve.join(' ') + "<br>");
+            console.log(tableauMotTrouve.join(' '));
             votreLettre = prompt("Proposez une lettre");
             votreLettre = votreLettre.toUpperCase(); // En majuscule
+            tableauDeLettrePropose.push(votreLettre); // Ajout de la lettre proposée
+            console.log(tableauDeLettrePropose.join(', '));
+            nbrDeVie = nbrDeVie + 1; // Hé Hé ;-) Une vie de perdue déjà
             // Boucle
+            var nbrDeLettreExiste = 0,
+              nbrDeLettreExistePas = 0;
             for (var i = 0; i < nbrValeur; i++) {
               // Si la lettre demandée se trouve dans le tableau
               if (tableauMotADeviner[i] === votreLettre) {
                 // Placer la-les lettre(s) dans le tableauMotTrouve
                 tableauMotTrouve[i] = votreLettre;
-                nbrDeLettreTrouve = nbrDeLettreTrouve + 1;
+                nbrDeLettreExiste = nbrDeLettreExiste + 1;
+              } else {
+                nbrDeLettreExistePas = nbrDeLettreExistePas + 1;
               }
             }
+            if (nbrDeLettreExiste > 0) {
+              console.log("La lettre " + votreLettre + " a été ajoutée");
+            }
+            if (nbrDeLettreExiste <= 0 && nbrDeLettreExistePas > 0) {
+              console.log("La lettre " + votreLettre + " n'existe pas dans le mot secret, hé hé une vie en moins ;-)");
+            }
             //       if (nbrDeLettreTrouve > 0) {
-            //         document.write("La lettre " + votreLettre + " a été ajoutée");
             //       } else {
             //         document.write("La lettre " + votreLettre + " ne s'y trouve pas");
             //       }
           }
           // Verification des 2 tableaux, s'ils sont identiques -> BRAVO
           else {
-            document.write("BRAVO!");
+            console.log("BRAVO!");
             break;
           }
         }
