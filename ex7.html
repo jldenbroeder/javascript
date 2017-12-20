@@ -27,21 +27,30 @@
       var voleBateau = Math.ceil(floatBateau); // arrodi au dessus
       console.log(floatBateau + ", " + couleBateau + ", " + voleBateau);
     </script> -->
-    <p>Exercice : Aléatoire 1</p>
+    <!-- <p>Exercice : Aléatoire 2</p>
     <script>
-      console.log(Math.floor(Math.random() * (99 - 50)) + 51);
-      console.log(Math.floor(Math.random() * (0 - 2)) + 2);
-      console.log(Math.floor(Math.random() * (10 - 0 + 1)) + 0);
-      // function entierAleatoire(min, max)
-      // {
-      //  console.log(Math.floor(Math.random() * (max - min + 1)) + min);
-      // }
-      // //Utilisation
-      // //La variable contient un nombre aléatoire compris entre 50 et 100, 50 et 100 inclus
-      // entierAleatoire(51, 99);
-      // entierAleatoire(0, 1);
-      // entierAleatoire(0, 10);
-    </script>
+      // Entier aléatoire entre min (inclus) et max (inclus)
+        function aleatoire(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        console.log(aleatoire(51, 99)); // entre 50 et 100 (de 51 à 99)
+        console.log(aleatoire(0, 1)); // 0 ou 1
+        console.log(aleatoire(0, 10)); // de 0 inclus à 10 inclus
+    </script> -->
+    <!-- <p>Exercice : Aléatoire 3</p>
+    <script>
+      var myArray = ['Goro', 'Johnny Cago', 'Kano', 'Liu Kano', 'Raiden', 'Reptil', 'Scorpion', 'Shang Tsun', 'Sonya', 'Sub-Zero'];
+      var max = myArray.length-1;
+      function aleatoire(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      var resultat = aleatoire(0, max);
+      console.log(myArray[resultat] + " : " + resultat);
+    </script> -->
   </body>
 
 </html>

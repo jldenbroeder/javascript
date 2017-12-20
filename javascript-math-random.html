@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math.random</title>
+  </head>
+
+  <body>
+    <script>
+      // Entier aléatoire entre min (inclus) et max (inclus)
+      for (var i = 0; i < 20; i++) {
+        function aleatoire(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        // document.write(aleatoire(51, 99) + "<br>"); // entre 50 et 100 (de 51 à 99)
+        // document.write(aleatoire(0, 1) + "<br>"); // 0 ou 1
+        document.write(aleatoire(0, 10) + "<br>"); // de 0 inclus à 10 inclus
+      }
+    </script>
+  </body>
+
+</html>
