@@ -12,17 +12,36 @@
     <p>Exercices Javascript</p>
     <p><a href="index.html">Exercice : Accueil</a></p>
     <p><a href="pendu.html">Exercice : jeu du pendu</a></p>
-    
-    <p>Exercice : Minimum et maximum</p>
-  <script>
-    var metier = prompt("Quel métier aimeriez-vous faire?");
-    var pays = prompt("Dans quel pays souhaiteriez-vous habiter?");
-    var prenom = prompt("Quel est votre prénom préféré?");
-    var nbrEnfant = prompt("Combien d'enfant voulez-vous avoir?");
-    console.log("Vous serez " + metier + " et habiterez en " + pays + ", marié à " + prenom + " avec " + nbrEnfant + " enfant.");
-  </script>
-
-
+    <!-- <p>Exercice : Minimum et maximum</p>
+    <script>
+      var min = Math.min(7, 5, -12, 6, 32, 18, 14, -2);
+      var max = Math.max(-3, 9, 21, 36, 27, 54, 17, 35);
+      console.log(min);
+      console.log(max);
+      console.log(min + " + " + max + " = " + (min + max));
+    </script> -->
+    <!-- <p>Exercice : Aléatoire 1</p>
+    <script>
+      var floatBateau = 10.4;
+      var couleBateau = Math.floor(floatBateau); // arrondi en dessous
+      var voleBateau = Math.ceil(floatBateau); // arrodi au dessus
+      console.log(floatBateau + ", " + couleBateau + ", " + voleBateau);
+    </script> -->
+    <p>Exercice : Aléatoire 1</p>
+    <script>
+      console.log(Math.floor(Math.random() * (99 - 50)) + 51);
+      console.log(Math.floor(Math.random() * (0 - 2)) + 2);
+      console.log(Math.floor(Math.random() * (10 - 0 + 1)) + 0);
+      // function entierAleatoire(min, max)
+      // {
+      //  console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+      // }
+      // //Utilisation
+      // //La variable contient un nombre aléatoire compris entre 50 et 100, 50 et 100 inclus
+      // entierAleatoire(51, 99);
+      // entierAleatoire(0, 1);
+      // entierAleatoire(0, 10);
+    </script>
   </body>
 
 </html>
