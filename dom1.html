@@ -9,33 +9,29 @@
   </head>
 
   <body>
-    <p>Exercices Javascript 08 : Personnage non-joueur</p>
+    <p>Exercices Javascript DOM : 1</p>
     <p><a href="index.html">Exercice : Accueil</a></p>
+    <table>
+      <tr>
+        <td>Jean Luc</td>
+        <td>51 ans</td>
+        <td>Belgique</td>
+      </tr>
+      <tr>
+        <td>Marie-France</td>
+        <td>52 ans</td>
+        <td>France</td>
+      </tr>
+    </table>
     <script>
-      // var Character.name = "Thor le destructeur";
-      // var Character.age = 35;
-      // var Character.items_to_give = [];
-      let table = {}; // nouvelle manière de déclarer
-      let main_color = "#FF0000";
-      let chair = {
-        color: main_color,
-        feets: 4,
-        things: ["papier", "telecommande", "clé usb"],
-        knock: function() {
-          console.log("TAP TAP ! ");
-          console.log(chair.things); // ["papier",..] si on utilise des références
-          console.log(this.things); // ["papier",...] si on utilise d'autres instances
-        }
-      };
-
-      console.log(chair.feets); // -> 4
-      console.log(chair["feets"]); // -> 4
-      chair.knock(); // lance la méthode knock
-      for (let key in chair) { // boucle
-        console.log(typeof key); // affiche le type de key ici String
-        console.log(key) // affiche chaque clé de mon objet ("color", "feets",...)
-        console.log(chair[key]) // affiche chaque valeur ("#FF0000", 4,...)
-      }
+      // Capture première ligne, première cellule
+      // var premiereCellule = document.getElementById('tableau').rows[0].cells[0];
+      var maTable = document.getElementsByTagName('table');
+      var maLigne = document.getElementsByTagName('tr');
+      var maCellule = document.getElementsByTagName('td');
+      console.log(maTable);
+      console.log(maLigne);
+      console.log(maCellule);
     </script>
   </body>
 
