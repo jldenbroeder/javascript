@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercices Javascript</title>
+  </head>
+
+  <body>
+    <p>Exercices Javascript 08 : Personnage non-joueur</p>
+    <p><a href="index.html">Exercice : Accueil</a></p>
+    <script>
+      // var Character.name = "Thor le destructeur";
+      // var Character.age = 35;
+      // var Character.items_to_give = [];
+      let table = {}; // nouvelle manière de déclarer
+      let main_color = "#FF0000";
+      let chair = {
+        color: main_color,
+        feets: 4,
+        things: ["papier", "telecommande", "clé usb"],
+        knock: function() {
+          console.log("TAP TAP ! ");
+          console.log(chair.things); // ["papier",..] si on utilise des références
+          console.log(this.things); // ["papier",...] si on utilise d'autres instances
+        }
+      };
+
+      console.log(chair.feets); // -> 4
+      console.log(chair["feets"]); // -> 4
+      chair.knock(); // lance la méthode knock
+      for (let key in chair) { // boucle
+        console.log(typeof key); // affiche le type de key ici String
+        console.log(key) // affiche chaque clé de mon objet ("color", "feets",...)
+        console.log(chair[key]) // affiche chaque valeur ("#FF0000", 4,...)
+      }
+    </script>
+  </body>
+
+</html>
