@@ -11,7 +11,7 @@
   <body>
     <p>Exercices Javascript DOM : 1</p>
     <p><a href="index.html">Exercice : Accueil</a></p>
-    <table>
+    <table id="matable">
       <tr>
         <td>Jean Luc</td>
         <td>51 ans</td>
@@ -25,13 +25,16 @@
     </table>
     <script>
       // Capture première ligne, première cellule
-      // var premiereCellule = document.getElementById('tableau').rows[0].cells[0];
-      var maTable = document.getElementsByTagName('table');
-      var maLigne = document.getElementsByTagName('tr');
-      var maCellule = document.getElementsByTagName('td');
-      console.log(maTable);
-      console.log(maLigne);
-      console.log(maCellule);
+      // var maTable = document.getElementsByTagName('table')[0].getElementsByTagName('tr')[0].cells[0].innerHTML;
+      // console.log(maTable);
+      var firstCell = document.getElementsByTagName('td');
+      console.log(firstCell[0].innerHTML);
+      firstCell[0].innerHTML = "Bonjour";
+      firstCell[0].style.color = "red";
+      // var firstCell = document.getElementsByTagName('td')[0].innerHTML;
+      // console.log(firstCell);
+      // firstCell = "Bonjour";
+      // console.log(firstCell);
     </script>
   </body>
 
