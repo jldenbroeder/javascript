@@ -7,7 +7,7 @@
 Etat: **En cours**  
 
 Début:Avant Noël   
-Durée: 1 à 2 semaines
+Durée: 1 à 2 semaines  
 Lieu: BeCode, Be Central  
 
 Liens des consignes  
