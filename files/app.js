@@ -78,13 +78,14 @@ link.style.color = "red";
 // ajouter à chaque 'li' la valeur courrante tableau
 // ensuite ajouter chaque 'li' à l'élément 'ol' précédement sélectionné
 var premierOl = document.querySelector('ol');
-// var liDuPremierOl = premierOl.querySelector('li');
-for (l = 0; l < premierOl.children.length; l++){
-  console.log(premierOl.children[l]);
-  // premierOl.removeChild(premierOl.children[l]);
+var max = premierOl.children.length;
+console.log(max);
+for (l = 0; l < max; l++){
+    premierOl.removeChild(premierOl.children[0]);
 }
-// var monTableau = ["Silent Teacher","Code Monkey", "CodeCombat"];
-// var premierOl = document.querySelector('ol');
-// for (i = 0; i < monTableau.length; i++){
-
-// }
+var monTableau = ["Silent Teacher","Code Monkey", "CodeCombat"];
+for (m = 0; m < monTableau.length; m++){
+  var li = document.createElement('li');
+  li.innerHTML = monTableau[m];
+  premierOl.appendChild(li);
+}
