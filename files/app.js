@@ -63,4 +63,28 @@ document.querySelector('h2').innerText = "<strong>HTML doens't work !</strong>";
     // sélectionner le premier lien dans le 'li' précedement crée
     // avec la propriété style change la couleur de texte de ce lien
 var premierUl = document.querySelector('ul');
-console.log(premierUl);
+var li = document.createElement('li');
+li.innerHTML = "Mon meilleur ami est <a href='http://www.google.com'>Google</a>";
+premierUl.appendChild(li);
+var link = premierUl.querySelector('li a');
+link.style.color = "red";
+// EXERCICE 4 : Création et suppression de plusieurs éléments
+// sélectionner le premier élément 'ol'
+// faire une boucle sur tous les enfants de ce dernier grâce à sa propriété children
+// supprimer chaque enfant de 'ol' grâce à removeChild()
+// déclare dans un tableau les valuers suivantes : ["Silent Teacher","Code Monkey", "CodeCombat"]
+// faire une boucle sur tous les enfants du tableau précédement crée
+// pour chaque valeur du tableau crée un élément 'li' crâce à document.createElement()
+// ajouter à chaque 'li' la valeur courrante tableau
+// ensuite ajouter chaque 'li' à l'élément 'ol' précédement sélectionné
+var premierOl = document.querySelector('ol');
+// var liDuPremierOl = premierOl.querySelector('li');
+for (l = 0; l < premierOl.children.length; l++){
+  console.log(premierOl.children[l]);
+  // premierOl.removeChild(premierOl.children[l]);
+}
+// var monTableau = ["Silent Teacher","Code Monkey", "CodeCombat"];
+// var premierOl = document.querySelector('ol');
+// for (i = 0; i < monTableau.length; i++){
+
+// }
