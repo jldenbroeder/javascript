@@ -11,7 +11,8 @@ Durée: 1 à 2 semaines
 Lieu: BeCode, Be Central  
 
 Liens des consignes  
-[Exercices Javascript] (https://github.com/becodeorg/Swartz-promo-3/tree/master/Parcours/04-Javascript "lien vers le Markdown des exercices Javascript")  
+[Exercices Javascript] (https://github.com/becodeorg/Swartz-promo-3/tree/master/Parcours/04-Javascript)
+
 
 Langages: Javascript  
 
