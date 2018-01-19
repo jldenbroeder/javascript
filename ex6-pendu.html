@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercices Javascript, jeu du pendu</title>
+  </head>
+
+  <body>
+    <p>Exercices Javascript</p>
+    <h3>Jeu du pendu</h3>
+    <script>
+      var tableauMotADeviner = ['B', 'O', 'N', 'J', 'O', 'U', 'R'],
+        tableauMotTrouve = ['_', '_', '_', '_', '_', '_', '_'],
+        nbrValeur = tableauMotADeviner.length,
+        tableauDeLettrePropose = [],
+        votreLettre = "",
+        nbrEssai = 0;
+        nbrDeVie = 0,
+        nbrDeVieMax = 26;
+
+      function guessLetter() {
+        // Boucle des essais
+        for (j = 0; j <= nbrDeVieMax; j++) {
+          // Verification des 2 tableaux, s'ils sont différents -> JEU
+          if (tableauMotADeviner.join('') !== tableauMotTrouve.join('')) {
+            console.log(tableauMotTrouve.join(' ')); // Affichage du mot à trouver
+            votreLettre = prompt("Proposez une lettre"); // Récupération d'une lettre
+            votreLettre = votreLettre.toUpperCase(); // Lettre en majuscule
+            tableauDeLettrePropose.push(votreLettre); // Ajout de la lettre proposée au tableauDeLettrePropose
+            console.log("Lettre(s) jouée(s): " + tableauDeLettrePropose.join(', ')); // Affichage des lettres proposées tableauDeLettrePropose
+            nbrEssai = nbrEssai + 1; // Ajout de 1 essai
+            var nbrDeLettreExiste = 0, // Réinitialisation des compteurs de la lettre (existe/existe pas)
+              nbrDeLettreExistePas = 0;
+            // Boucle d'inspection du mot secret
+            for (var i = 0; i < nbrValeur; i++) {
+              // Si la lettre demandée se trouve dans le tableauMotADeviner (mot secret)
+              if (tableauMotADeviner[i] === votreLettre) {
+                // Placer la/les lettre(s) dans le tableauMotTrouve au bon index
+                tableauMotTrouve[i] = votreLettre;
+                nbrDeLettreExiste = nbrDeLettreExiste + 1; // La lettre existe :)
+              } else {
+                nbrDeLettreExistePas = nbrDeLettreExistePas + 1; // La lettre n'existe pas :(
+              }
+            }
+            if (nbrDeLettreExiste > 0) {
+              console.log("La lettre " + votreLettre + " a été ajoutée");
+            }
+            if (nbrDeLettreExiste <= 0 && nbrDeLettreExistePas > 0) {
+              console.log("La lettre " + votreLettre + " n'existe pas dans le mot secret, hé hé une vie en moins ;-)");
+              nbrDeVie = nbrDeVie+1;
+              console.log("vie perdue(s): " + nbrDeVie);
+            }
+          }
+          // Verification des 2 tableaux, s'ils sont identiques -> BRAVO
+          else {
+            console.log("BRAVO! Vous avez trouvé le mot secret ;-)");
+            console.log(tableauMotTrouve.join(' ')); // Affichage du mot à trouver
+            console.log("Vous avez perdu " + nbrDeVie + " de vie(s).");
+            var votreLettre = "";
+            break;
+          }
+        }
+      }
+      guessLetter();
+    </script>
+  </body>
+
+</html>

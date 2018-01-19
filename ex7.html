@@ -5,52 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style type='text/css'>
+    textarea {
+      width: 80%;
+      height: 100px;
+      background-color: #39383b;
+      color: rgb(204, 186, 175);
+      padding: 5px;
+      border: solid 1px orange;
+    }
+  </style>
     <title>Exercices Javascript</title>
   </head>
 
   <body>
-    <p>Exercices Javascript</p>
-    <p><a href="index.html">Exercice : Accueil</a></p>
-    <p><a href="pendu.html">Exercice : jeu du pendu</a></p>
-    <!-- <p>Exercice : Minimum et maximum</p>
-    <script>
-      var min = Math.min(7, 5, -12, 6, 32, 18, 14, -2);
-      var max = Math.max(-3, 9, 21, 36, 27, 54, 17, 35);
-      console.log(min);
-      console.log(max);
-      console.log(min + " + " + max + " = " + (min + max));
-    </script> -->
-    <!-- <p>Exercice : Aléatoire 1</p>
-    <script>
-      var floatBateau = 10.4;
-      var couleBateau = Math.floor(floatBateau); // arrondi en dessous
-      var voleBateau = Math.ceil(floatBateau); // arrodi au dessus
-      console.log(floatBateau + ", " + couleBateau + ", " + voleBateau);
-    </script> -->
-    <!-- <p>Exercice : Aléatoire 2</p>
-    <script>
-      // Entier aléatoire entre min (inclus) et max (inclus)
-        function aleatoire(min, max) {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-        console.log(aleatoire(51, 99)); // entre 50 et 100 (de 51 à 99)
-        console.log(aleatoire(0, 1)); // 0 ou 1
-        console.log(aleatoire(0, 10)); // de 0 inclus à 10 inclus
-    </script> -->
-    <!-- <p>Exercice : Aléatoire 3</p>
-    <script>
-      var myArray = ['Goro', 'Johnny Cago', 'Kano', 'Liu Kano', 'Raiden', 'Reptil', 'Scorpion', 'Shang Tsun', 'Sonya', 'Sub-Zero'];
-      var max = myArray.length-1;
-      function aleatoire(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-      var resultat = aleatoire(0, max);
-      console.log(myArray[resultat] + " : " + resultat);
-    </script> -->
+    <p>07-ex-maths</p>
+    <hr>
+    <p>Exercice : Minimum et maximum</p>
+<textarea>
+  <script>
+  var min = Math.min(7, 5, -12, 6, 32, 18, 14, -2);
+  var max = Math.max(-3, 9, 21, 36, 27, 54, 17, 35);
+  console.log(min);
+  console.log(max);
+  console.log(min + " + " + max + " = " + (min + max));
+  </script>
+</textarea><br><br>
+<p>Exercice : Aléatoire 1</p>
+<textarea>
+  <script>
+  var floatBateau = 10.4;
+  var couleBateau = Math.floor(floatBateau); // arrondi en dessous
+  var voleBateau = Math.ceil(floatBateau); // arrodi au dessus
+  console.log(floatBateau + ", " + couleBateau + ", " + voleBateau);
+  </script>
+</textarea><br><br>
+<p>Exercice : Aléatoire 2</p>
+<textarea>
+  <script>
+  // Entier aléatoire entre min (inclus) et max (inclus)
+  function aleatoire(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  console.log(aleatoire(51, 99)); // entre 50 et 100 (de 51 à 99)
+  console.log(aleatoire(0, 1)); // 0 ou 1
+  console.log(aleatoire(0, 10)); // de 0 inclus à 10 inclus
+  </script>
+</textarea><br><br>
+<p>Exercice : Aléatoire 3</p>
+<textarea>
+  <script>
+  var myArray = ['Goro', 'Johnny Cago', 'Kano', 'Liu Kano', 'Raiden', 'Reptil', 'Scorpion', 'Shang Tsun', 'Sonya', 'Sub-Zero'];
+  var max = myArray.length-1;
+  function aleatoire(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  var resultat = aleatoire(0, max);
+  console.log(myArray[resultat] + " : " + resultat);
+  </script>
+</textarea><br><br>
 
   </body>
 

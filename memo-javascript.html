@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type='text/css'>
+      textarea {
+        width: 80%;
+        height: 100px;
+        background-color: #39383b;
+        color: rgb(204, 186, 175);
+        padding: 5px;
+        border: solid 1px orange;
+      }
+    </style>
+    <title>Memo: Javascript</title>
+  </head>
+
+  <body>
+    <h3>Exercices Javascript</h3>
+    <!-- JS prompt, confirm, alert -->
+    <hr>
+    <h4>
+      <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/prompt" target="_blank">prompt();</a>
+      <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/confirm" target="_blank">confirm();</a> <a href="https://developer.mozilla.org/fr/docs/Web/API/Window/alert" target="_blank">alert();</a></h4>
+    <p>prompt contient un champ et retourne une valeur "String",<br> confirm propose "oui" ou "non" et retourne "true" ou "false",<br> alert affiche unquement un message.</p> <textarea>
+  <script>
+  // PROMPT
+    var question = confirm("Avez-vous une question?");
+    if (question){
+      question = prompt("Posez votre question?");
+      alert("Votre question est: " + question);
+    }
+    else{
+      alert("Pas de question! Pas de réponse");
+    }
+    // Pour récupérer un nombre
+    // var nbrProduit = parseInt(prompt("Combien de " + produit + " avez-vous?"));
+  </script>
+</textarea>
+    <!-- JS date.getFullYear(); -->
+    <hr>
+    <h4><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date/getFullYear" target="_blank">date.getFullYear();</a></h4>
+    <p>Permet d'obtenir l'année' actuelle.</p> <textarea>
+  <script>
+    var date = new Date();
+    var anneeActuelle = date.getFullYear();
+    var anneeDeNaissance = prompt("En quelle année êtes-vous né?");
+    var age = anneeActuelle - anneeDeNaissance;
+    console.log("Vous avez cette année-ci " + age + " ans.");
+  </script>
+</textarea>
+<!-- JS Les Tableaux (Array) -->
+<hr>
+<h4><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array" target="_blank">Array (tableau)</a></h4>
+<p>Affichage des contenus d'un tableau avec la boucle for()</p> <textarea>
+  <script>
+        var myArray = ['Bourvil', 'Fernandel', 'Coluche'];
+        var nbrValeur = myArray.length;
+        for (var i = 0; i < nbrValeur; i++) {
+        document.write("Le numero " + (i+1) + " est " + myArray[i] + ".<br>");
+        }
+// Association de 2 tableaux
+        var myArrayActeur = ['Bourvil', 'Fernandel', 'Coluche'];
+        var myArrayPosition = ['premier', 'deuxième', 'troisième'];
+        var nbrValeur = myArrayActeur.length;
+        for (var i = 0; i < nbrValeur; i++) {
+        document.write("Le " + myArrayPosition[i] + " est " + myArrayActeur[i] + ".<br>");
+        }
+          </script>
+</textarea>
+<!-- JS Ajouter dans un tableau (Array) -->
+<hr>
+<h4><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/push" target="_blank">Array.push("valeur"); (tableau)</a></h4>
+<p>Ajouter une valeur dans un tableau()</p> <textarea>
+  <script>
+    var myArray = ["Mario", "Luigi", "Peach"];
+    document.write(myArray + "<br>");
+    var myArrayAvecAjout = myArray;
+    myArrayAvecAjout.push("Bowser");
+    document.write(myArrayAvecAjout + "<br>");
+  </script>
+</textarea>
+    <!-- <pre><code>
+  // PROMPT
+    var metier = prompt("Quel métier aimeriez-vous faire?");
+    console.log("Vous serez " + metier);
+  </code></pre> --></body>
+
+</html>

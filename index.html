@@ -6,133 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exercices Javascript</title>
+    <style type='text/css'>
+      textarea {
+        width: 80%;
+        height: 100px;
+        background-color: #39383b;
+        color: rgb(204, 186, 175);
+        padding: 5px;
+        border: solid 1px orange;
+      }
+    </style>
   </head>
 
   <body>
     <p>Exercices Javascript</p>
-    <p><a href="pendu.html">Exercice : jeu du pendu</a></p>
-        <p><a href="ex7.html">Exercice : 07</a></p>
-        <p><a href="ex8.html">Exercice : 08</a></p>
-        <p><a href="dom1.html">Exercice : Javascript DOM</a></p>
-        <p><a href="files/index.html">Exercice : Javascript DOM Class</a></p>       
-    <!-- <p>Exercice : Diseur de bonne aventure</p>
-  <script>
-    var metier = prompt("Quel métier aimeriez-vous faire?");
-    var pays = prompt("Dans quel pays souhaiteriez-vous habiter?");
-    var prenom = prompt("Quel est votre prénom préféré?");
-    var nbrEnfant = prompt("Combien d'enfant voulez-vous avoir?");
-    console.log("Vous serez " + metier + " et habiterez en " + pays + ", marié à " + prenom + " avec " + nbrEnfant + " enfant.");
-  </script> -->
-    <!-- <p>Exercice : Calculer l'âge</p>
-  <script>
-    var date = new Date();
-    var anneeActuelle = date.getFullYear();
-    var anneeDeNaissance = prompt("En quelle année êtes-vous né?");
-    var age = anneeActuelle - anneeDeNaissance;
-    console.log("Vous avez cette année-ci " + age + " ans.");
-  </script> -->
-    <!-- <p>Exercice : Bientôt vieux</p>
-  <script>
-    var age = prompt("Quel est votre âge?");
-    var ageMax = 100;
-    var denree = prompt("Qu'aimez-vous manger?");
-    var nbrJour = prompt("Combien de " + denree + " mangez-vous par jour?");
-    var anneeAVivre = ageMax - age;
-    var denreeTotale = anneeAVivre * nbrJour;
-    console.log("Il vous reste " + denreeTotale + " " + denree + " a manger avant d'atteindre l'âge de " + ageMax + " ans.");
-  </script> -->
-    <!-- <p>Exercice : Priorités</p>
-  <script>
-    var result = (1 + 2) * 3 + 4 / 2;
-    var a = 1 + 2;
-    var b = a * 3;
-    var c = 4 / 2;
-    var d = b + c;
-    console.log("Premier résultat: " + result + " et 2ème résultat: " + d);
-  </script> -->
-    <!-- <p>Exercice : Langues</p>
-  <script>
-  var langue = prompt("Quel langue parlez-vous? (fr, es, en)");
-        if (langue === "fr"){
-          console.log("Bonjour tout le monde");
-        }
-        else if (langue === "es"){
-          console.log("Hola, Mundo");
-        }
-        else if (langue === "en"){
-          console.log("Hello world");
-        }
-        else{
-          console.log("Désolé mais je ne parle pas votre langue!");
-        }
-  </script> -->
-    <!-- <p>Exercice : Affichage des scores</p>
-    <script>
-      var score = prompt("Quel est votre score?");
-      if (score >= 90 && score <= 100) {
-        var resultat = "A";
-      } else if (score < 90 && score > 50) {
-        var resultat = "B";
-      } else if (score <= 50) {
-        var resultat = "C";
-      } else {
-        var resultat = "\"Indéfinissable\" car vous n'avez pas mit la bonne valeur!";
-      }
-      console.log("Vous avez le rang " + resultat);
-    </script> -->
-    <!-- <script>
-    var produit = "pomme";
-    var nbrProduit = parseInt(prompt("Combien de " + produit + " avez-vous?"));
-      if (nbrProduit <= 1){
-        console.log("Vous avez " + nbrProduit + " " + produit);
-      }
-      else{
-        console.log("Vous avez " + nbrProduit + " " + produit + "s");
-      }
-  </script> -->
-    <!-- <h3>Soustractions</h3>
-  <script type="text/javascript">
-  var a;
-  var b;
-    function soustraction(a, b) {
-      var c = a-b;
-      return document.write(a + " - " + b + " = " + c + "<br>");
-    }
-    soustraction(6, 2);
-    soustraction(8, 7);
-    soustraction(20, 3);
-    soustraction(4, 8);
-  </script>
-
-  <h3>Divisions et Multiplications</h3>
-    <script type="text/javascript">
-      function calcul(a, b) {
-        var c = a/b;
-        var d = a*b;
-        return document.write(a + " / " + b + " = " + c + "<br>" + a + " * " + b + " = " + d + "<br>");
-      }
-      calcul(6, 2);
-      calcul(8, 7);
-      calcul(20, 3);
-      calcul(4, 8);
-    </script>
-
-    <h3>Pourcentages</h3>
-      <script type="text/javascript">
-        function pourcent(a, b) {
-          var c = a*b/100;
-          return document.write(a + "% de " + b + " = " + c + "<br>");
-        }
-        pourcent(50, 48);
-        pourcent(10, 80);
-        pourcent(20, 3);
-        pourcent(4, 8);
-      </script>
-
-
-      <h3>Vitesse</h3>
-        <script type="text/javascript">
-        // a = km, b = mn
+    <p><a href="ex6-pendu.html" target="_blank">Exercice : 06 - jeu du pendu</a></p>
+    <p><a href="ex7.html" target="_blank">Exercice : 07</a></p>
+    <p><a href="ex8.html" target="_blank">Exercice : 08</a></p>
+    <p><a href="dom1.html" target="_blank">Exercice : Javascript DOM</a></p>
+        <p><a href="memo-javascript.html" target="_blank">Page Perso</a></p>
+    <hr>
+    <p>Exercice : Diseur de bonne aventure</p> <textarea>
+          <script>
+          var metier = prompt("Quel métier aimeriez-vous faire?");
+          var pays = prompt("Dans quel pays souhaiteriez-vous habiter?");
+          var prenom = prompt("Quel est votre prénom préféré?");
+          var nbrEnfant = prompt("Combien d'enfant voulez-vous avoir?");
+          console.log("Vous serez " + metier + " et habiterez en " + pays + ", marié à " + prenom + " avec " + nbrEnfant + " enfant.");
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Calculer l'âge</p> <textarea>
+          <script>
+          var date = new Date();
+          var anneeActuelle = date.getFullYear();
+          var anneeDeNaissance = prompt("En quelle année êtes-vous né?");
+          var age = anneeActuelle - anneeDeNaissance;
+          console.log("Vous avez cette année-ci " + age + " ans.");
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Bientôt vieux</p> <textarea>
+          <script>
+          var age = prompt("Quel est votre âge?");
+          var ageMax = 100;
+          var denree = prompt("Qu'aimez-vous manger?");
+          var nbrJour = prompt("Combien de " + denree + " mangez-vous par jour?");
+          var anneeAVivre = ageMax - age;
+          var denreeTotale = anneeAVivre * nbrJour;
+          console.log("Il vous reste " + denreeTotale + " " + denree + " a manger avant d'atteindre l'âge de " + ageMax + " ans.");
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Priorités</p> <textarea>
+          <script>
+          var result = (1 + 2) * 3 + 4 / 2;
+          var a = 1 + 2;
+          var b = a * 3;
+          var c = 4 / 2;
+          var d = b + c;
+          console.log("Premier résultat: " + result + " et 2ème résultat: " + d);
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Langues</p> <textarea>
+          <script>
+          var langue = prompt("Quel langue parlez-vous? (fr, es, en)");
+          if (langue === "fr"){
+            console.log("Bonjour tout le monde");
+          }
+          else if (langue === "es"){
+            console.log("Hola, Mundo");
+          }
+          else if (langue === "en"){
+            console.log("Hello world");
+          }
+          else{
+            console.log("Désolé mais je ne parle pas votre langue!");
+          }
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Affichage des scores</p> <textarea>
+          <script>
+          var score = prompt("Quel est votre score?");
+          if (score >= 90 && score <= 100) {
+            var resultat = "A";
+          } else if (score < 90 && score > 50) {
+            var resultat = "B";
+          } else if (score <= 50) {
+            var resultat = "C";<br><br>
+          } else {
+            var resultat = "\"Indéfinissable\" car vous n'avez pas mit la bonne valeur!";
+          }
+          console.log("Vous avez le rang " + resultat);
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Mettre au pluriel</p> <textarea>
+          <script>
+          var produit = "pomme";
+          var nbrProduit = parseInt(prompt("Combien de " + produit + " avez-vous?"));
+          if (nbrProduit <= 1){
+            console.log("Vous avez " +nbrProduit + " " + produit);
+          }<br><br>
+          else{
+            console.log("Vous avez " + nbrProduit + " " + produit + "s");
+          }
+          </script>
+        </textarea><br><br>
+    <p>Soustractions</p> <textarea>
+          <script type="text/javascript">
+          var a;
+          var b;
+          function soustraction(a, b) {
+            var c = a-b;
+            return document.write(a + " - " + b + " = " + c + "<br>");
+          }
+          soustraction(6, 2);
+          soustraction(8, 7);
+          soustraction(20, 3);
+          soustraction(4, 8);
+          </script>
+        </textarea><br><br>
+    <p>Divisions et Multiplications</p> <textarea>
+          <script type="text/javascript">
+          function calcul(a, b) {
+            var c = a/b;
+            var d = a*b;
+            return document.write(a + " / " + b + " = " + c + "<br>" + a + " * " + b + " = " + d + "<br>");
+          }
+          calcul(6, 2);
+          calcul(8, 7);
+          calcul(20, 3);
+          calcul(4, 8);
+          </script>
+        </textarea><br><br>
+    <p>Pourcentages</p> <textarea>
+          <script type="text/javascript">
+          function pourcent(a, b) {
+            var c = a*b/100;
+            return document.write(a + "% de " + b + " = " + c + "<br>");
+          }
+          pourcent(50, 48);
+          pourcent(10, 80);
+          pourcent(20, 3);
+          pourcent(4, 8);
+          </script>
+        </textarea><br><br>
+    <p>Vitesse</p> <textarea>
+          <script type="text/javascript">
+          // a = km, b = mn
           function vitesse(a, b) {
             var c = a*60/b;
             return document.write(a + " km en " + b + " minute(s) = " + c + " km/h<br>");
@@ -141,92 +159,97 @@
           vitesse(10, 5);
           vitesse(20, 3);
           vitesse(7, 8);
-        </script> -->
-    <!-- <h3>Exercice : Pair et impair</h3>
-    <script type="text/javascript">
-      for (var pair = 0; pair <= 20; pair++) {
-        if (pair % 2 === 0) {
-          document.write(pair + " est pair!<br>");
-        } else {
-          document.write(pair + " est impair!<br>");
-        }
-      }
-    </script> -->
-    <!-- <h3>Exercice : Multiplication Tables</h3>
-      <script type="text/javascript">
-      var multiplicateur = 9;
-        for (var i = 0; i <= 10; i++) {
-          var resultat = i*multiplicateur;
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Pair et impair</p> <textarea>
+          <script type="text/javascript">
+          for (var pair = 0; pair <= 20; pair++) {
+            if (pair % 2 === 0) {
+              document.write(pair + " est pair!<br>");
+            } else {
+              document.write(pair + " est impair!<br>");
+            }
+          }
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Multiplication Tables</p> <textarea>
+          <script type="text/javascript">
+          var multiplicateur = 9;
+          for (var i = 0; i <= 10; i++) {
+            var resultat = i*multiplicateur;
             document.write(i + " * " + multiplicateur + " = " + resultat + "<br>");
-        }
-      </script> -->
-    <!-- <h3>Exercice : assigner des grades</h3>
-    <script type="text/javascript">
-      var score;
-      var resultat;
-      function grade(score) {
-        if (score <= 100 && score > 90) {
-          var resultat = "A";
-        } else if (score <= 90 && score > 80) {
-          var resultat = "B";
-        } else if (score <= 80 && score > 70) {
-          var resultat = "C";
-        } else if (score <= 70 && score > 65) {
-          var resultat = "D";
-        } else {
-          var resultat = "F";
-        }
-        return document.write("Pour " + score + " points vous avez le grade  " + resultat + "<br>");
-      }
-      for (var i = 0; i <= 100; i++) {
-        grade(i);
-      }
-    </script> -->
-    <!-- <script>
-    var etoile = "";
-      for (var i = 1; i <= 5; i++) {
-        etoile = etoile + "* ";
-        document.write(etoile+"<br>");
-      }
-    </script> -->
-    <!-- <h3>Exercices : Tableaux, Exercice : addition</h3>
-    <script type="text/javascript">
-      var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-      var nbrValeur = myArray.length;
-      var resultat = 0;
-      for (var i = 0; i < nbrValeur; i++) {
-      resultat = resultat+myArray[i];
-      }
-      document.write(+ resultat);
-    </script> -->
-    <!-- <h3>Exercice : Vos meilleurs choix</h3>
-<script>
-      var myArray = ['Bourvil', 'Fernandel', 'Coluche'];
-      var nbrValeur = myArray.length;
-      for (var i = 0; i < nbrValeur; i++) {
-      document.write("Le numero " + (i+1) + " est " + myArray[i] + ".<br>");
-      }
-</script>
-<br>
-
-<script>
-      var myArrayActeur = ['Bourvil', 'Fernandel', 'Coluche'];
-      var myArrayPosition = ['premier', 'deuxième', 'troisième'];
-      var nbrValeur = myArrayActeur.length;
-      for (var i = 0; i < nbrValeur; i++) {
-      document.write("Le " + myArrayPosition[i] + " est " + myArrayActeur[i] + ".<br>");
-      }
-</script> -->
-    <!-- <h3>Exercice : clone</h3>
-    <script>
-      var myArray = ["Mario", "Luigi", "Peach"];
-      document.write(myArray + "<br>");
-      var myArrayAvecAjout = myArray;
-      myArrayAvecAjout.push("Bowser");
-      document.write(myArrayAvecAjout + "<br>");
-    </script> -->
-
-
-  </body>
+          }
+          </script>
+        </textarea>
+    <p>Exercice : assigner des grades</p> <textarea>
+          <script type="text/javascript">
+          var score;
+          var resultat;
+          function grade(score) {
+            if (score <= 100 && score > 90) {
+              var resultat = "A";
+            } else if (score <= 90 && score > 80) {
+              var resultat = "B";
+            } else if (score <= 80 && score > 70) {
+              var resultat = "C";
+            } else if (score <= 70 && score > 65) {
+              var resultat = "D";
+            } else {
+              var resultat = "F";
+            }
+            return document.write("Pour " + score + " points vous avez le grade  " + resultat + "<br>");
+          }
+          for (var i = 0; i <= 100; i++) {
+            grade(i);
+          }
+          </script>
+        </textarea><br><br>
+    <p>Exercice : pyramide</p> <textarea>
+          <script>
+          var etoile = "";
+          for (var i = 1; i <= 5; i++) {
+            etoile = etoile + "* ";
+            document.write(etoile+"<br>");
+          }
+          </script>
+        </textarea><br><br>
+    <p>Exercices : Tableaux, Exercice : addition</p> <textarea>
+          <script type="text/javascript">
+          var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+          var nbrValeur = myArray.length;
+          var resultat = 0;
+          for (var i = 0; i < nbrValeur; i++) {
+            resultat = resultat+myArray[i];
+          }
+          document.write(+ resultat);
+          </script>
+        </textarea><br><br>
+    <p>Exercice : Vos meilleurs choix</p> <textarea>
+          <script>
+          var myArray = ['Bourvil', 'Fernandel', 'Coluche'];
+          var nbrValeur = myArray.length;
+          for (var i = 0; i < nbrValeur; i++) {
+            document.write("Le numero " + (i+1) + " est " + myArray[i] + ".<br>");
+          }
+          </script>
+          <br>
+          <script>
+          var myArrayActeur = ['Bourvil', 'Fernandel', 'Coluche'];
+          var myArrayPosition = ['premier', 'deuxième', 'troisième'];
+          var nbrValeur = myArrayActeur.length;
+          for (var i = 0; i < nbrValeur; i++) {
+            document.write("Le " + myArrayPosition[i] + " est " + myArrayActeur[i] + ".<br>");
+          }
+          </script>
+        </textarea><br><br>
+    <p>Exercice : clone</p> <textarea>
+          <script>
+          var myArray = ["Mario", "Luigi", "Peach"];
+          document.write(myArray + "<br>");
+          var myArrayAvecAjout = myArray;
+          myArrayAvecAjout.push("Bowser");
+          document.write(myArrayAvecAjout + "<br>");
+          </script>
+        </textarea><br><br> </body>
 
 </html>
